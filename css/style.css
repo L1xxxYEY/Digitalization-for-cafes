@@ -176,6 +176,7 @@ nav ul li {
 .containerPOS {
     display: flex;
     gap: 32px 15px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
