@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digitalization for cafes</title>
     <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -74,6 +75,7 @@
         </div>
     </section>
 
+    <div class="line"></div>
 
     <section>
         <div class="textLifeContainer">
@@ -112,13 +114,76 @@
             </div>
 
         </div>
-
-
-
-
-
-
     </section>
 
+    <div class="line"></div>
+    
+    <section class="splide feedback" aria-label="Splide Basic HTML Example">
+
+        <h2 class="feedbackTitle">Почему магазины выбирают Absolut POS</h2>
+        
+        <div class="splide__track">
+              <ul class="splide__list">
+
+                  <li class="splide__slide feedbackCards">
+                    <h3 id="economic">Экономия времени и денег благодаря оптимизации рабочих процессов</h3>
+                    <p>Более удобный ввод накладных,  проведение инвентаризаций с любого устройства — это лишь несколько специальных функций, которые позволят вам тратить больше времени на бизнес, а не рутинную работу.</p>
+                </li>
+
+                  <li class="splide__slide feedbackCards">
+                    <h3 id="opportunity">Возможность принимать эффективные бизнес-решения</h3>
+                    <p>Больше никаких табличек в Excel или учета расходов на бумаге. Автоматический учёт данных и комплексные отчеты дадут вам знания, необходимые для увеличения прибыли</p>
+                </li>
+
+                  <li class="splide__slide feedbackCards">
+                    <h3 id="reliability">Надежность, безопасность и простота</h3>
+                    <p>Можно не бояться за сохранность данных, сотрудникам не нужно будет тратить несколько дней на изучение программы, а если что-то пойдет не так - у вас будет всегда рядом техническая поддержка, чтобы помочь</p>
+                </li>
+
+              </ul>
+        </div>
+      </section>
+
+
+      <section class="customerWrapper">
+
+        <div class="customerContainer">
+            <div class="customerCard">
+                <button>Отзыв клиента</button>
+            <p>
+                "Переход на Absolut POS очень помог нам наладить прозрачность в наших розничных продажах, так как это объединило все в один контур и дало доступ к огромному объемы ответов и графиков, о которых я даже не знал"
+           </p>
+            </div>
+            
+            <div class="customerName">
+                <p>
+                    Александр Ямщиков
+                    <br>сооснователь ICE Line iceline.ru
+                </p>
+            </div>
+            
+        </div>
+                
+      </section>
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide',{
+            perPage:3,
+            rewind:true,
+            arrows:false,
+            gap:"20px",
+            breakpoints: {
+                800: {
+                    perPage:1,
+                }
+            }
+          } );
+
+          splide.mount();
+        } );
+      </script>
+    <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
