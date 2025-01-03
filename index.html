@@ -327,6 +327,64 @@
       </section>
 
 
+      <section class="tryFree">
+
+        <h2 class="titleFree">Попробуйте <br>бесплатно</h2>
+        
+        <p class="textFree">Попробуйте версию <br>с полным функционалом 30 дней <br>бесплатно</p>
+
+        <div  class="whiteButton">
+            <button>Попробовать Absolut POS</button>
+        </div>
+
+      </section>
+
+
+
+
+
+      <section class="splide startWork" aria-label="Splide Basic HTML Example">
+
+        <h2 class="startWorkTitle">Как начать работать с Absolut POS</h2>
+        
+        <div class="splide__track">
+              <ul class="splide__list">
+
+                  <li class="splide__slide startWorkCardsFirst">
+                    <div>
+                        <img src="./img/orange.svg" alt="">
+                    </div>                    
+                    <p>Зарегистрируйтесь за несколько минут</p>
+                </li>
+
+                  <li class="splide__slide startWorkCardsSecond">
+                    <div>
+                        <img src="./img/pink.svg" alt="">
+                    </div>                    
+                    <p>Заполните каталог товаров или поручите это нам совершенно бесплатно</p>
+                </li>
+
+                  <li class="splide__slide startWorkCardsThird">
+                    <div>
+                        <img src="./img/violet.svg" alt="">
+                    </div>                    
+                    <p>Установите приложение для сотрудников</p>
+                </li>
+
+                <li class="splide__slide startWorkCardsFour">
+                    <div>
+                        <img src="./img/green.svg" alt="">
+                    </div>
+                    <p>Начните работать эффективнее!</p>
+                </li>
+
+              </ul>
+        </div>
+      </section>
+
+      <div class="line"></div>
+
+
 
     <script>
         document.addEventListener( 'DOMContentLoaded', function() {
@@ -346,6 +404,21 @@
         } );
         document.addEventListener( 'DOMContentLoaded', function() {
           var splide = new Splide( '.splide.products',{
+            perPage:4,
+            rewind:true,
+            arrows:false,
+            gap:"20px",
+            breakpoints: {
+                800: {
+                    perPage:1,
+                }
+            }
+          } );
+
+          splide.mount();
+        } );
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide.startWork',{
             perPage:4,
             rewind:true,
             arrows:false,
