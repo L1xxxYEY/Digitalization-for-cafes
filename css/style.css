@@ -893,25 +893,31 @@ nav ul li {
 
 
 .tryFree {
+    position: relative;
     background: linear-gradient(to right, #D9E1FFE5, #DFF4FFE5);
     border-radius: calc(0.7vw + 29.3px);
     margin-left: calc(2.2vw + 8px);
     margin-right: calc(2.2vw + 8px);
     padding: calc(-1vw + 240px) calc(2.6vw + 6.7px) calc(1.5vw + 18.7px);
+    overflow: hidden;
 }
 
 .titleFree {
+    position: relative;
     font-size: calc(5.6vw + 30px);
     text-align: center;
     font-weight: 390;
     margin-bottom: calc(0.2vw + 111.3px);
     line-height: 90%;
+    z-index: 1;
 }
 
 .textFree {
+    position: relative;
     font-size: calc(0.4vw + 14.7px);
     text-align: center;
     color: #00000073;
+    z-index: 1;
 }
 
 .whiteButton {
@@ -921,6 +927,7 @@ nav ul li {
 }
 
 .whiteButton button {
+    position: relative;
     background-color: white;
     color: #000000;
     font-size: 14px;
@@ -928,8 +935,39 @@ nav ul li {
     border-radius: 30px;
     border: none;
     margin-top: 24px;
+    z-index: 1;
 }
 
+.element {
+    position: absolute;
+    display: flex;
+}
+
+.elementFirst {
+    bottom: -1px;
+    left: -1px;
+}
+
+.elementSecond {
+    top: -1px;
+    right: -1px;
+}
+
+.elementCard {
+    display: none;
+    position: absolute;
+    width: calc(135.6vw - 160px);
+}
+
+.elementThird {
+    top: -1px;
+    right: 0px;
+}
+
+.elementFour {
+    bottom: -1px;
+    left: 0px;
+}
 
 
 
@@ -1022,26 +1060,6 @@ nav ul li {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 450px) {
     .fullLogo {
         display: none;
@@ -1115,6 +1133,14 @@ nav ul li {
 
     .whiteButton {
         display: flex;       
+    }
+
+    .element {
+        display: none;
+    }
+
+    .elementCard {
+        display: flex;
     }
 }
 
